@@ -22,26 +22,26 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     <div
       className={`border rounded-lg overflow-hidden transition-all duration-300 hover:shadow-[rgba(255,255,255,0.2)] hover:shadow-md border-[#D1D4CD] dark:border-[#2E455D] ${className}`}
     >
-      <div className="p-6">
-        <h3 className="text-xl font-medium mb-2 text-[#0D1321] dark:text-white">{title}</h3>
-        <p className="mb-4 text-[#0D1321]/70 dark:text-white/70">{description}</p>
-        <div className="flex flex-wrap mb-4">
+      <div className="sm:p-6 p-4">
+        <h3 className="text-lg font-medium sm:mb-2 mb-0 text-[#0D1321] dark:text-white">{title}</h3>
+        <p className="sm:mb-4 mb-2 text-[#0D1321]/70 dark:text-white/70">{description}</p>
+        <div className="flex flex-wrap sm:mb-4 mb-2">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="inline-block px-3 py-1 text-xs rounded-full mr-2 mb-2 bg-[#D1D4CD] dark:bg-[#2E455D] text-[#0D1321] dark:text-white"
+              className="inline-block sm:px-3 px-2 py-1 sm:text-xs text-[10px] rounded-full sm:mr-2 mr-1 sm:mb-2 mb-1 bg-[#D1D4CD] dark:bg-[#2E455D] text-[#0D1321] dark:text-white"
             >
               {tag}
             </span>
           ))}
         </div>
-        <div className="flex space-x-3">
+        <div className="flex sm:space-x-3 space-x-2">
           {liveHref ? (
             <a
               href={liveHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-[#0D1321]/80 dark:text-white/80 hover:underline"
+              className="flex items-center sm:gap-2 gap-1 text-sm text-[#0D1321]/80 dark:text-white/80 hover:underline"
             >
               <ExternalLink size={16} />
               <span>View Project</span>
@@ -52,7 +52,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               href={sourceHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-[#0D1321]/80 dark:text-white/80 hover:underline"
+              className="flex items-center sm:gap-2 gap-1 text-sm text-[#0D1321]/80 dark:text-white/80 hover:underline"
             >
               <Github size={16} />
               <span>Source Code</span>

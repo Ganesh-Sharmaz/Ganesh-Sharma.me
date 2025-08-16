@@ -68,7 +68,7 @@ const mockProjects: ProjectItem[] = [
 
 const ProjectBox = () => {
   return (
-    <div className="grid grid-cols-1 gap-6">
+    <div className="grid grid-cols-1 sm:gap-6 gap-6">
       {mockProjects.map((p) => (
         <ProjectCard
           key={p.title}

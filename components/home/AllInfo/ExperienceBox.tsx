@@ -34,7 +34,7 @@ const sections: Section[] = [
     links: [{ label: "collegehai.com", href: "https://collegehai.com/" }],
   },
   {
-    title: "College Hai Admin‑UI – CRM for Admissions/Leads",
+    title: "College Hai Admin-UI – CRM for Admissions/Leads",
     timeRange: "March 10, 2025 – June 15, 2025",
     bullets: [
       "Developed scalable lead management with advanced search, filters, and status tracking (−50% retrieval time).",
@@ -70,15 +70,29 @@ const techTags = [
 
 const ExperienceBox = () => {
   return (
+    // mobile padding added, desktop preserved
     <div className="space-y-12 ml-2">
       <div className="relative pl-8 border-l-2 border-[#D1D4CD] dark:border-[#2E455D]">
         <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-[#2E455D] dark:bg-[#D1D4CD] border-2 border-white dark:border-[#1D2D44]"></div>
-        <div className="mb-1 flex items-center justify-between">
-          <h3 className="text-lg font-medium text-[#0D1321] dark:text-white">Front‑End Developer Intern <Link className="dark:text-[#D1D4CD] text-[#1D2D44] font-semibold" href={"https://www.makunaiglobal.ai/"}>@ Makunai Global Pvt. Ltd.</Link></h3>
-          <span className="text-sm text-[#0D1321]/70 dark:text-white/70">March 10, 2025 – present</span>
-        </div>
-        <div className="text-xs text-[#0D1321]/70 dark:text-white/70 mb-3">WTT, Sector‑16, Noida, 201301</div>
 
+        {/* Header: stacked on mobile, row on md+ (desktop unchanged) */}
+        <div className="mb-1 flex flex-col md:flex-row md:items-center md:justify-between">
+          <h3 className="text-lg font-medium text-[#0D1321] dark:text-white">
+            Front-End Developer Intern{" "}
+            <Link className="dark:text-[#D1D4CD] text-[#1D2D44] font-semibold" href={"https://www.makunaiglobal.ai/"}>
+              @ Makunai Global Pvt. Ltd.
+            </Link>
+          </h3>
+
+          {/* date aligned to the right on md+, but on mobile placed under title with small top margin */}
+          <span className="text-sm text-[#0D1321]/70 dark:text-white/70 mt-2 md:mt-0">
+            March 10, 2025 – present
+          </span>
+        </div>
+
+        <div className="text-xs text-[#0D1321]/70 dark:text-white/70 mb-3">WTT, Sector-16, Noida, 201301</div>
+
+        {/* tech tags */}
         <div className="flex flex-wrap mb-4">
           {techTags.map((t) => (
             <span
@@ -92,32 +106,44 @@ const ExperienceBox = () => {
 
         {sections.map((section) => (
           <div key={section.title} className="mb-6">
-            <div className="flex items-center gap-2 mb-2">
+            {/* Section header:
+                - mobile: vertical stack (title, then badge+links)
+                - md+: inline row (title + badge + links) — preserves original desktop UI
+            */}
+            <div className="flex flex-col md:flex-row md:items-center gap-2 mb-2">
               <h4 className="font-medium text-[#0D1321] dark:text-white">{section.title}</h4>
-              <span className="inline-block rounded px-2 py-0.5 text-[10px] bg-[#E1E0D3] dark:bg-[#2E455D] text-[#0D1321] dark:text-white">
-                {section.timeRange}
-              </span>
-              {section.links?.map((l) => (
-                <a
-                  key={`${section.title}-${l.label}`}
-                  href={l.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline text-blue-900 text-xs"
-                >
-                  {l.label}
-                </a>
-              ))}
+
+              {/* badge + links group: on mobile it will appear under title, on md+ it's inline to the right */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="inline-block rounded px-2 py-0.5 text-[10px] bg-[#E1E0D3] dark:bg-[#2E455D] text-[#0D1321] dark:text-white">
+                  {section.timeRange}
+                </span>
+
+                {/* links: small, underline links — on mobile they'll wrap under the title */}
+                {section.links?.map((l) => (
+                  <a
+                    key={`${section.title}-${l.label}`}
+                    href={l.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-blue-900 text-xs"
+                  >
+                    {l.label}
+                  </a>
+                ))}
+              </div>
             </div>
+
             <ul className="mt-1 mb-3 space-y-1 text-[#0D1321]/80 dark:text-white/80">
               {section.bullets.map((b) => (
-                <li key={`${section.title}-${b.slice(0,40)}`} className="flex"><span className="mr-2">•</span><span>{b}</span></li>
+                <li key={`${section.title}-${b.slice(0, 40)}`} className="flex">
+                  <span className="mr-2">•</span>
+                  <span>{b}</span>
+                </li>
               ))}
             </ul>
           </div>
         ))}
-
-        
       </div>
     </div>
   );

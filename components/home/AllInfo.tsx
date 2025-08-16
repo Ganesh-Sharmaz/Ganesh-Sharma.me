@@ -67,7 +67,7 @@ const AllInfo = () => {
   };
 
   return (
-    <div className="my-12 max-w-4xl mx-auto w-full font-main no-scrollbar">
+    <div className="sm:my-12 my-6 max-w-4xl mx-auto w-full font-main no-scrollbar px-4 sm:px-0">
       <ThreeToggleButton 
         onChange={handleToggleChange} 
         initial="Projects" 
