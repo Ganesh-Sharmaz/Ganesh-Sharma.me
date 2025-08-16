@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌟 Ganesh Sharma – Developer Portfolio
 
-## Getting Started
+Welcome to the repository for my personal developer portfolio — a showcase of my skills, projects, and journey as a self-taught developer turned professional contributor.
 
-First, run the development server:
+## 🚀 About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Hi, I’m **Ganesh Sharma**, a passionate **Frontend Developer** skilled in **React, Next.js, TypeScript, and Python**.  
+I love building **scalable SaaS platforms, open-source tools, and creative web applications** that merge clean design with solid engineering.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I believe in:
+- Writing **clean, maintainable code**
+- Optimizing for **performance and accessibility**
+- Constantly learning and sharing through **open-source**
+- Building products that solve **real-world problems**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💼 Professional Experience
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Front-End Developer Intern – Makunai Global Ltd.**  
+*March 2025 – Present*  
+- Developed **Babbler**, an omnichannel SaaS platform integrating WhatsApp Cloud API, real-time chat, template management, and role-based authentication.
+- Worked on **College Hai**, a public SEO platform with optimized metadata, SSR, dynamic modules, and ad management.
+- Built **College Hai Admin-UI**, a CRM for admissions/leads with advanced search, caching, and scalable data handling.
 
-## Learn More
+## 🛠 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+**Languages:**  
+`JavaScript` `TypeScript` `Python` `HTML5` `CSS3`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Frameworks & Libraries:**  
+`React.js` `Next.js` `Tailwind CSS` `Redux` `Framer Motion`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Backend & Tools:**  
+`Node.js` `Express.js` `Flask` `Firebase` `Vercel` `Git` `Postman` `JIRA`
 
-## Deploy on Vercel
+**Others:**  
+`SEO Optimization` `Performance Tuning` `Responsive Design` `Open-Source`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📌 Featured Projects
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### [SHNK – Dev Task Automation CLI](https://github.com/Ganesh-Sharmaz/SHNK)
+Python CLI tool to scaffold projects (React + Tailwind, Next.js soon), configure dependencies, and launch dev servers.
+
+### [Yapper AI – Multi-Persona Chatbot](https://github.com/Ganesh-Sharmaz/YapperAI)
+React + Tailwind app powered by Gemini Flash 1.5 and Firebase Auth with markdown-based rich chat.
+
+### [StorageBuddy – Unified Web Storage SDK](https://github.com/Ganesh-Sharmaz/StorageBuddy)
+Zero-dependency TypeScript library to unify `localStorage`, `sessionStorage`, and cookies with typed APIs.
+
+### [GrabTube – YouTube Downloader](https://github.com/Ganesh-Sharmaz/GrabTubeFrontend)
+Full-stack YouTube downloader (React frontend + Flask backend) using `yt-dlp` and `FFmpeg`.
+
+### [Groovy – Spotify-like Music App](https://github.com/Ganesh-Sharmaz/SpotifyClone)
+Spotify-inspired music app with responsive grids, search, and smooth animations.
+
+## 📅 My Journey
+
+- **2023 Nov** – Started with Python basics in college.
+- **2024 Jan–Mar** – Learned HTML, CSS, JavaScript, and dove into React.
+- **2024 Jul–Dec** – Built full-stack apps, explored Python Flask, published open-source tools.
+- **2025 Jan–Feb** – Mastered TypeScript & Next.js, created StorageBuddy & its documentation.
+- **2025 Mar–Present** – Landed my first internship, worked on production-grade SaaS & SEO platforms.
+
+## 🌐 Live Portfolio
+
+You can view my portfolio live at: **[Portfolio Link](https://your-portfolio-link.vercel.app/)**  
+*(Replace with your deployed link)*
+
+## 🤝 Connect with Me
+
+- **GitHub:** [Ganesh-Sharmaz](https://github.com/Ganesh-Sharmaz)  
+- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/your-link)  
+- **Twitter/X:** [@yourhandle](https://x.com/yourhandle)  
+- **Email:** shashanklhr@gmail.com  
+
+---
+
+### 📝 License
+This portfolio’s code is licensed under the MIT License. Feel free to use it as inspiration but give proper credit.
+
+---
+
+> *"The best way to predict the future is to build it."*
