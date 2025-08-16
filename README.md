@@ -68,9 +68,9 @@ You can view my portfolio live at: **[Portfolio Link](https://your-portfolio-lin
 ## 🤝 Connect with Me
 
 - **GitHub:** [Ganesh-Sharmaz](https://github.com/Ganesh-Sharmaz)  
-- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/your-link)  
-- **Twitter/X:** [@yourhandle](https://x.com/yourhandle)  
-- **Email:** shashanklhr@gmail.com  
+- **LinkedIn:** [Ganesh-Sharmazx]([https://linkedin.com/in/your-link](https://www.linkedin.com/in/ganesh-sharmaz/))  
+- **Twitter/X:** [Ganesh-Sharmazz]([https://x.com/yourhandle](https://x.com/Ganesh_Sharmazz))  
+- **Email:** shashanklhr@gmail.com 
 
 ---
 
